@@ -18,6 +18,7 @@ html,body{
     --midnight: #104f55;
 
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --gray: linear-gradient(to right, #8c8c8c 0%,  #cccccc 50%);
 
     --Abel: 'Abel',cursive;
     --Anton: 'Anton',cursive;
@@ -137,7 +138,7 @@ p{
 }
 
 .nav .nav-items .nav-link:hover{
-    background-color: var(--midnight);
+    background: var(--gray);
 }
 
 .nav .nav-items .nav-link:hover a{
@@ -158,21 +159,25 @@ p{
 
 /*--main--*/
 main .site-title{
-    background: url(../assets/Background-image.png);
+    background: url(../assets/Background-image.jpg);
     background-size: cover;
     height: 110vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 main .site-title .site-background{
     padding-top: 10rem;
+    padding-left: 5rem;
     text-align: center;
-    color: var(--white);
+    
 }
 
 main .site-title h1, h3{
     margin: .3rem;
+    background: linear-gradient(to right, black 0%, gray 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 main .site-title .btn{
@@ -182,14 +187,14 @@ main .site-title .btn{
 
 main .site-title .btn:hover{
     background: transparent;
-    border: 1px solid var(--white);
-    color: var(--white);
+    border: 1px solid var(--text-gray);
+    color: var(--text-gray);
 }
 
 main .blog{
-    background: url('../assets/Abract01.png');
+    background: url('../assets/Abract.png');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
     height: 100vh;
     width: 100%;
     background-size: 65%;
