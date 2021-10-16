@@ -170,7 +170,6 @@ main .site-title .site-background{
     padding-top: 10rem;
     padding-left: 5rem;
     text-align: center;
-    
 }
 
 main .site-title h1, h3{
@@ -511,6 +510,11 @@ footer.footer .move-up span:hover{
 @media only screen and (max-width:520px){
     main .blog{
         height: 125vh;
+    }
+
+    main .site-title .site-background{
+        padding-top: 5rem;
+        padding-left: 1rem;
     }
 
     .site-content .post-content > .post-image .post-info{
